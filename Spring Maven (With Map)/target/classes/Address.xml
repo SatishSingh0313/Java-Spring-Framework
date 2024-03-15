@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+           <bean id="myAddress" class="com.map.Address">  
+            <property name="address">
+            
+            <map>
+               <entry key="1" value="Kolkata"></entry>
+               <entry key="2" value="Delhi"></entry>
+               <entry key="3" value="Noida"></entry>
+               <entry key="4" value="Mumbai"></entry>
+            </map>
+            
+            </property>
+            </bean>  
+            
+           <bean id="myprop" class="com.map.Address">  
+            <property name="addressprops">
+            <props>
+            <prop key="one">Kolkata</prop>
+             <prop key="two">Banglore</prop>
+              <prop key="three">Mumbai</prop>
+               <prop key="four">Delhi</prop>
+                <prop key="five">Up</prop>
+            </props>
+            </property>
+            </bean>  
+       
+</beans>
