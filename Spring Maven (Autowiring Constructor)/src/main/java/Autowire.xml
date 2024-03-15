@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+            
+             <bean id="mySim" class="com.sp15.Sim" autowire="constructor">
+               <constructor-arg name="network" value="5G" />
+            </bean>
+            
+            <bean id="myMobile" class="com.sp15.Mobile" >
+               <constructor-arg name="brand" value="Iphone" />
+               <constructor-arg  ref="mySim"></constructor-arg>
+            </bean>
+            
+           
+              <!-- By constructor -->
+            <!--   <bean name="cert" class="com.spring10.Certificate">
+               <property name="cName" value="Spring"></property>
+               <property name="cDuration" value="2.5"></property>
+            </bean>
+            
+             <bean name="stud1" class="com.spring10.Student" autowire="constructor"></bean> -->
+            
+
+</beans> 
